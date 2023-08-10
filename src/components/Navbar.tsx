@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import MenuPage from './Menu'
+import Menu from './Menu'
 import React from 'react'
 import CartIcon from './CartIcon';
 import Image from 'next/image';
@@ -25,7 +25,7 @@ const Navbar = () => {
        
         {/* LOGO */}
         <div className='text-xl font-bold flex-1 md:text-center'>
-            <Link href="/">LUGIS</Link>
+            <Link href="/">LUIGIS</Link>
         </div>
 
          {/* right side links */}
@@ -46,8 +46,9 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div className='md:hidden'>
-            <MenuPage/>
+            <Menu/>
         </div>
+        
     </div>
   )
 }
